@@ -16,8 +16,8 @@ interface ISFS {
 contract ModeChatIdMetadata is OwnableWithManagers {
   string public description = "The official web3 name and digital identity of the Mode Chat web3 community.";
   string public brand = "ModeChat.xyz";
-  string public colorLeft = "#FCFC03";
-  string public colorRight = "#191818";
+  string public colorLeft = "#DFFE00";
+  string public colorRight = "#000000";
 
   // EVENTS
   event DescriptionChanged(address indexed user, string description);
