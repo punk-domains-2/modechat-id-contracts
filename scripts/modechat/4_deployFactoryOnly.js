@@ -14,8 +14,8 @@ async function main() {
     return;
   }
 
-  const forbAddress = "";
   const metaAddress = "";
+  const forbAddress = "";
   const resolverAddress = ""; // IMPORTANT: this script is made for non-upgradable Resolver. If you're using upgradable Resolver, you need to modify this script below (find: PunkResolverNonUpgradable line)
 
   const domainName = ".modechat";

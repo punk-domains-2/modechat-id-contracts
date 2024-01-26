@@ -17,7 +17,7 @@ const price1char = ethers.utils.parseUnits("1", paymentTokenDecimals);
 const price2char = ethers.utils.parseUnits("0.1", paymentTokenDecimals);
 const price3char = ethers.utils.parseUnits("0.03", paymentTokenDecimals);
 const price4char = ethers.utils.parseUnits("0.008", paymentTokenDecimals);
-const price5char = ethers.utils.parseUnits("0.002", paymentTokenDecimals);
+const price5char = ethers.utils.parseUnits("0.0006", paymentTokenDecimals);
 
 async function main() {
   if (sfsNftTokenId == 0) {

@@ -5,9 +5,13 @@ const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686
 const feeReceiver = "0xE08033d0bDBcEbE7e619c3aE165E7957Ab577961";
 
 async function main() {
+  console.log("Create SFS NFT for ModeChat (use it here for Stats, Stats Middleware, Minter and Custom Metadata)");
+
   const contractName = "SfsNftInitialize";
 
   const [deployer] = await ethers.getSigners();
+
+  console.log("Using SFS contract address:", sfsAddress);
 
   console.log("Deploying contracts with the account:", deployer.address);
   console.log("Account balance:", (await deployer.getBalance()).toString());

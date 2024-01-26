@@ -147,14 +147,14 @@ module.exports = {
       chainId: 34443,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
       gas: "auto", // gas limit
-      gasPrice: 1, // 1 wei
+      gasPrice: 1000000000, // 1 gwei
     },
     modeTestnet: { // Mode testnet
       url: 'https://sepolia.mode.network/', 
       chainId: 919,
       accounts: [process.env.DEPLOYER_PRIVATE_KEY],
       gas: "auto", // gas limit
-      gasPrice: 1, // 1 wei
+      gasPrice: 1000000000, // 1 gwei
     },
     opera: { // Fantom mainnet
       url: 'https://rpc.ftm.tools', // "https://rpcapi.fantom.network", 
