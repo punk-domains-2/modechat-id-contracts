@@ -1,4 +1,4 @@
-// npx hardhat run scripts/modechat/other/callMethods.js --network modeTestnet
+// npx hardhat run scripts/modechat/other/callMethods.js --network modeMainnet
 
 const forbiddenAddress = "";
 const factoryAddress = "";

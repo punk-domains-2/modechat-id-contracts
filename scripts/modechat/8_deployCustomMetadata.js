@@ -1,9 +1,9 @@
 // Deploy FlexiPunkMetadata contract
-// npx hardhat run scripts/modechat/8_deployCustomMetadata.js --network modeTestnet
+// npx hardhat run scripts/modechat/8_deployCustomMetadata.js --network modeMainnet
 
-const tldAddress = "";
+const tldAddress = "0x523a7050df3DC7E96B7faAF4dDECCc244d886a90";
 const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6" : "0x8680CEaBcb9b56913c519c069Add6Bc3494B7020";
-const sfsNftTokenId = 0; // TODO: Enter SFS NFT token ID!!!
+const sfsNftTokenId = 286; // TODO: Enter SFS NFT token ID!!!
 
 async function main() {
   if (sfsNftTokenId == 0) {

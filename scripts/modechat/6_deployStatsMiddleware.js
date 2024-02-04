@@ -1,9 +1,10 @@
 // Deploy metadata contract
-// npx hardhat run scripts/modechat/6_deployStatsMiddleware.js --network modeTestnet
+// npx hardhat run scripts/modechat/6_deployStatsMiddleware.js --network modeMainnet
 
 const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6" : "0x8680CEaBcb9b56913c519c069Add6Bc3494B7020";
-const sfsNftTokenId = 0; // TODO: Enter SFS NFT token ID!!!
-const statsAddress = "";
+const sfsNftTokenId = 286; // TODO: Enter SFS NFT token ID!!!
+const statsAddress = "0x63f8691b048e68E1C3d6E135aDc81291A9bb1987";
+const managerAddress = "0x6771F33Cfd8C6FC0A1766331f715f5d2E1d4E0e2"; // add iggy deployer as manager
 
 async function main() {
   if (sfsNftTokenId == 0) {
@@ -27,6 +28,10 @@ async function main() {
   );
 
   await instance.deployed();
+
+  // add manager address
+  const tx1 = await instance.addManager(managerAddress);
+  await tx1.wait();
 
   // create stats contract
   const stats = await ethers.getContractFactory("Stats");

@@ -1,8 +1,8 @@
 // Deploy non-upgradable version of Resolver
-// npx hardhat run scripts/modechat/3_deployNonUpgradableResolver.js --network modeTestnet
+// npx hardhat run scripts/modechat/3_deployNonUpgradableResolver.js --network modeMainnet
 
 const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6" : "0x8680CEaBcb9b56913c519c069Add6Bc3494B7020";
-const sfsNftTokenId = 0; // TODO: Enter SFS NFT token ID!!!
+const sfsNftTokenId = 285; // TODO: Enter SFS NFT token ID!!!
 
 async function main() {
   if (sfsNftTokenId == 0) {

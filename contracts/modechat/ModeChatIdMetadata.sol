@@ -14,7 +14,7 @@ interface ISFS {
 /// @author Tempe Techie
 /// @notice Contract that stores metadata for a TLD
 contract ModeChatIdMetadata is OwnableWithManagers {
-  string public description = "The official web3 name and digital identity of the Mode Chat web3 community.";
+  string public description = "The official web3 name and digital identity of the ModeChat web3 community.";
   string public brand = "ModeChat.xyz";
   string public colorLeft = "#DFFE00";
   string public colorRight = "#000000";

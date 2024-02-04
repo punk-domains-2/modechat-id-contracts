@@ -1,5 +1,5 @@
 // Deploy FlexiPunkMetadata contract
-// npx hardhat run scripts/modechat/0_deploySfsNftIntialize.js --network modeTestnet
+// npx hardhat run scripts/modechat/0b_deploySfsNftIntialize.js --network modeMainnet
 
 const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6" : "0x8680CEaBcb9b56913c519c069Add6Bc3494B7020";
 const feeReceiver = "0xE08033d0bDBcEbE7e619c3aE165E7957Ab577961";

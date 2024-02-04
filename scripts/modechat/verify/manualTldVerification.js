@@ -1,6 +1,6 @@
-// Run: npx hardhat run scripts/modechat/verify/manualTldVerification.js --network modeTestnet
+// Run: npx hardhat run scripts/modechat/verify/manualTldVerification.js --network modeMainnet
 
-const tldAddress = "";
+const tldAddress = "0x523a7050df3DC7E96B7faAF4dDECCc244d886a90";
 
 async function main() {
   console.log("Copy the line below and paste it in your terminal to verify the TLD contract on Etherscan:");

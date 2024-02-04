@@ -1,15 +1,15 @@
-// npx hardhat run scripts/modechat/7_deployMinter.js --network modeTestnet
+// npx hardhat run scripts/modechat/7_deployMinter.js --network modeMainnet
 // it automatically adds minter address to the TLD contract as minter
 
 const contractNameFactory = "ModeChatIdMinter";
 
 const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6" : "0x8680CEaBcb9b56913c519c069Add6Bc3494B7020";
 
-const sfsNftTokenId = 0; // TODO: Enter SFS NFT token ID!!!
+const sfsNftTokenId = 286; // TODO: Enter SFS NFT token ID!!!
 
-const statsAddress = ""; // stats middleware contract address
-const distributorAddress = "0xb29050965A5AC70ab487aa47546cdCBc97dAE45D";
-const tldAddress = "";
+const statsAddress = "0xb29e981343daa6ea18D58cdB0800DFE962aA53e4"; // stats middleware contract address
+const distributorAddress = "0x20aeB41bCfaFb05b580dB2f687123eDa605315Ed";
+const tldAddress = "0x523a7050df3DC7E96B7faAF4dDECCc244d886a90";
 
 const paymentTokenDecimals = 18;
 

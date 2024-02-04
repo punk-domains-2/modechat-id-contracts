@@ -1,22 +1,22 @@
 // Deploy factory contract only (ForbiddenTlds and FlexiPunkMetadata need to be already deployed)
 // after deployment, factory address will be automatically added to the ForbiddenTlds whitelist and to the Resolver
 // if not, do it manually
-// npx hardhat run scripts/modechat/4_deployFactoryOnly.js --network modeTestnet
+// npx hardhat run scripts/modechat/4_deployFactoryOnly.js --network modeMainnet
 
 async function main() {
   const contractNameFactory = "FlexiPunkTLDFactory";
 
   const sfsAddress = (network.name == "modeTestnet") ? "0xBBd707815a7F7eb6897C7686274AFabd7B579Ff6" : "0x8680CEaBcb9b56913c519c069Add6Bc3494B7020";
-  const sfsNftTokenId = 0; // TODO: Enter SFS NFT token ID!!!
+  const sfsNftTokenId = 285; // TODO: Enter SFS NFT token ID!!!
 
   if (sfsNftTokenId == 0) {
     console.log("Please enter SFS NFT token ID!!!");
     return;
   }
 
-  const metaAddress = "";
-  const forbAddress = "";
-  const resolverAddress = ""; // IMPORTANT: this script is made for non-upgradable Resolver. If you're using upgradable Resolver, you need to modify this script below (find: PunkResolverNonUpgradable line)
+  const metaAddress = "0x2919f0bE09549814ADF72fb0387D1981699fc6D4";
+  const forbAddress = "0xa97c7AF10ee564EBf452A9347bB9653454Ba69C0";
+  const resolverAddress = "0x4aBf8b364ac4aF048Ea077AAA2EDF3e1e1EC0f9c"; // IMPORTANT: this script is made for non-upgradable Resolver. If you're using upgradable Resolver, you need to modify this script below (find: PunkResolverNonUpgradable line)
 
   const domainName = ".modechat";
   const domainSymbol = ".MODECHAT";
