@@ -1,11 +1,11 @@
 // npx hardhat run scripts/modechat/other/callMethods.js --network modeMainnet
 
 const forbiddenAddress = "";
-const factoryAddress = "";
+const factoryAddress = "0x7e8ab50697c7abe63bdab6b155c2fb8d285458cb";
 const tldAddress = "";
 const metadataAddress = "";
 
-const domainPrice = ethers.utils.parseUnits("0.000001", "ether");
+const domainPrice = ethers.utils.parseUnits("0", "ether");
 
 async function main() {
   const [deployer] = await ethers.getSigners();
@@ -57,27 +57,27 @@ async function main() {
 
   // CREATE A NEW TLD
   /* */
-  const tldName = ".savm";
-  const tldSymbol = ".SAVM";
+  const tldName = ".ion";
+  const tldSymbol = ".ION";
    
-  /* */
+  /* 
   const tx = await factoryContract.ownerCreateTld(
     tldName, // TLD name
     tldSymbol, // symbol
     deployer.address, // TLD owner
     domainPrice, // domain price
-    true // buying enabled
+    false // buying enabled
   );
 
   tx.wait();
+  */
   
   
-  /*
   const tldAddr = await factoryContract.tldNamesAddresses(tldName);
   
   console.log("TLD address: ");
   console.log(tldAddr);
-  */
+  /* */
 
   // toggle buying domains
   //await tldContract.toggleBuyingDomains();
